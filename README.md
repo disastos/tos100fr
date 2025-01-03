@@ -148,6 +148,9 @@ So here are the rules.
 - Note that, as much as possible, labels and function names must be taken from [th-otto/tos1x](https://github.com/th-otto/tos1x) to ease comparison between TOS versions. Only exception is the leading underscore for global variables and functions: it mustn't be used in the disassembly, because Ghidra doesn't handle it correctly (it would also appear on the C side).
 - As this GitHub project contains a Ghidra project archive, it can't be edited concurrently. You need to be alone when working on the project. So you need somehow to "lock" the archive into exclusive mode before working on it with the intention of pushing your changes. I simply propose you to open a new [discussion](https://github.com/disastos/tos100fr/discussions) on the project and tell something like "Hey, I'm starting working on the project, please don't update it until I finish".
 - To get write access to the repository, be sure to have a GitHub account, then ask for it in a new [discussion](https://github.com/disastos/tos100fr/discussions).
+- You must rearchive your work into the GAR file. For that, close the CodeBrowser tool. Then, from the Ghidra project manager, use *File > Archive Current Project*. Overwrite the existing file.
+- Then commit and push the new GAR file as usual.
+- You can now announce the end of your work, and this way release the "lock". Other people can now get your updated disassembly, and contribute again.
 
 Of course this is only the beginning. Best practices will evolve.
 
