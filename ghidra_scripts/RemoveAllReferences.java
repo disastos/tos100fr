@@ -1,4 +1,4 @@
-//Remove all references to the current address.
+// Remove all references to the current address.
 //@author Vincent Rivière
 //@category Atari
 //@keybinding
